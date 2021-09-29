@@ -31,3 +31,8 @@ jobs:
     steps:
       - name: print
         run: "date '+%H:%M:%S   %d/%m/%y'"
+  job-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step one
+        run: echo 'welcome to step one'
