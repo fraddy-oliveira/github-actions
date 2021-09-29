@@ -1,0 +1,26 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "description": "How to github actions?",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./src/main.js",
+    "test": "I'm in action"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fraddy-oliveira/github-actions.git"
+  },
+  "keywords": [
+    "Github",
+    "actions"
+  ],
+  "author": "Fraddy Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fraddy-oliveira/github-actions/issues"
+  },
+  "homepage": "https://github.com/fraddy-oliveira/github-actions#readme"
+}
