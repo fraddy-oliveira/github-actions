@@ -4,19 +4,19 @@ on: [push]
 
 jobs:
   job1:
-    name: First
-    runs-on: ubuntu-latest
-    steps:
-      - name: Step one
-        run: echo "Step one"
+    - name: First
+      runs-on: ubuntu-latest
+      steps:
+        - name: 'Step one'
+          run: echo "Step one"
 
-      - name: Step two
-        run: echo "Step two"
+        - name: 'Step two'
+          run: echo "Step two"
   job2:
-    name: Two
-    runs-on: windows-latest
-    steps:
-      - name: Step one
-        run: echo "Step one"
-      - name: Step two
-        run: echo "Step two"
+    - name: Two
+      runs-on: windows-latest
+      steps:
+        - name: 'Step one'
+          run: echo "Step one"
+        - name: 'Step two'
+          run: echo "Step two"
