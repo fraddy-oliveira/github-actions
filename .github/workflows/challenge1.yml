@@ -36,3 +36,13 @@ jobs:
     steps:
       - name: Step one
         run: echo 'welcome to step one'
+  ubuntu-env:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo $TEST
+          echo "Fetch variable using yaml ${{ env.TEST }}"
+  window-env:
+    runs-on: windows-latest
+    steps:
+      - run: echo $ENV:TEST
