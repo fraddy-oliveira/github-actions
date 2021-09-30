@@ -2,6 +2,9 @@ name: Challenge 1
 
 on: push
 
+env:
+  TEST: Tester
+
 jobs:
   job1:
     name: Print date time in ubuntu
@@ -38,6 +41,8 @@ jobs:
         run: echo 'welcome to step one'
   ubuntu-env:
     runs-on: ubuntu-latest
+    env:
+      TEST: Ubuntu tester
     steps:
       - run: |
           echo $TEST
