@@ -1,0 +1,20 @@
+name: Challenge 2
+
+on: push
+
+env:
+  artifact_name: learn
+
+jobs:
+
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      
+      - name: Upload now
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ env.artifact_name }}
+        
